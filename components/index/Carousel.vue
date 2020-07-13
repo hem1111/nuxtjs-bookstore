@@ -5,7 +5,7 @@
         <div
           class="carousel-item"
           :class="pointer==index && fade? 'fadeIn': ''"
-          :style="`background-image: url(${require('@/assets/carousel.png')})`"
+          :style="{ backgroundImage: `url(${image.src})` }"
           v-show="pointer==index"
         >
           <!-- :style="`background-image: url(${image.src})`" -->
@@ -41,6 +41,13 @@ export default {
           title: "BOOK STORE : MISSION STATEMENT",
           content: "Click or press the order now button to place your order"
         }
+        // ,
+        // {
+        //   src:
+        //     "https://cdn.discordapp.com/attachments/730070699204411458/732186710850666526/carousel.png",
+        //   title: "Specific Book : MISSION STATEMENT",
+        //   content: "Click or press the order now button to place your order"
+        // }
       ]
     };
   },
