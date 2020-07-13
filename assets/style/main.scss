@@ -1,0 +1,29 @@
+@import "../../node_modules/bulma/sass/utilities/initial-variables.sass";
+@import "../../node_modules/bulma/sass/utilities/functions.sass";
+$navbar-breakpoint: $tablet;
+@import "../../node_modules/bulma/bulma.sass";
+@import "./utlilities.scss";
+
+
+.overlay {
+  overflow-y: hidden !important;
+}
+
+.swal2-title {
+  font-size: 24px !important;
+}
+
+.swal2-content {
+  font-size: 15px !important;
+}
+
+// Transition
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.25s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}

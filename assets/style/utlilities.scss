@@ -1,0 +1,42 @@
+$sizes : (1: 4px,
+  2: 8px,
+  3: 16px,
+  4: 24px,
+  5: 32px,
+  6: 48px,
+  7: 56px,
+  8: 64px,
+  9: 72px,
+  10: 80px,
+  12: 96px,
+);
+
+@mixin py {
+
+  @each $size,
+  $px in $sizes {
+    &-#{$size} {
+      padding-top: $px;
+      padding-bottom: $px
+    }
+  }
+}
+
+@mixin px {
+
+  @each $size,
+  $px in $sizes {
+    &-#{$size} {
+      padding-left: $px;
+      padding-right: $px
+    }
+  }
+}
+
+.py {
+  @include py;
+}
+
+.px {
+  @include px;
+}
