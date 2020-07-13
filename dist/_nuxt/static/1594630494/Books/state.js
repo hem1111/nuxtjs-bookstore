@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a,b,c){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1594630494",layout:"default",error:{statusCode:404,path:b,message:"This page could not be found"},state:{enquiry:{books:[],name:a,authorName:a,price:a,desc:a},show:c},serverRendered:c,routePath:b,config:{}}}("","\u002FBooks",false));
