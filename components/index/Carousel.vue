@@ -14,11 +14,7 @@
               <div class="container has-text-centered">
                 <h1 class="title is-size-2 is-size-3-mobile" v-html="image.title"></h1>
                 <h2 class="subtitle has-text-white">{{image.content}}</h2>
-                <button
-                  class="button is-info is-radiusless is-medium"
-                >
-                  <!-- @click="showForm" -->
-
+                <button class="button is-info is-radiusless is-medium" @click="showForm">
                   <b>BUY NOW!</b>
                 </button>
               </div>
@@ -26,31 +22,7 @@
           </section>
         </div>
       </div>
-
-      <!-- <div class="carousel-controls is-hidden-mobile">
-        <i class="las la-angle-left" @click="prev"></i>
-        <i class="las la-angle-right" @click="next"></i>
-      </div>
-      <div class="carousel-indicator">
-        <i
-          class="las"
-          v-for="i in images.length"
-          :key="i"
-          :class=" i-1==pointer ? 'la-dot-circle' : 'la-circle'"
-          @click="set(i)"
-        ></i>
-      </div>-->
     </div>
-    <!-- <transition name="fade">
-      <Enquiry v-if="show" :closeHandler="closeForm" :notificationHandler="notification" />
-    </transition>-->
-
-    <!-- <transition name="fade">
-      <div class="notification is-success is-light" v-if="showNotification">
-        <button class="delete" @click="showNotification = false"></button>
-        We have received your message and would like to thank you for writing to us. If your inquiry is urgent, please use the telephone number listed below to talk to one of our staff members. Otherwise, we will reply by email as soon as possible.
-      </div>
-    </transition>-->
   </div>
 </template>
 
@@ -66,7 +38,7 @@ export default {
         {
           src:
             "https://cdn.discordapp.com/attachments/715800802605793321/722040647569113088/viber_image.jpg",
-          title: 'BOOK STORE : MISSION STATEMENT',
+          title: "BOOK STORE : MISSION STATEMENT",
           content: "Click or press the order now button to place your order"
         }
       ]
@@ -75,20 +47,17 @@ export default {
 
   created() {
     this.next();
-    // setInterval(() => {
-    //   this.next();
-    // }, 5000);
   },
 
   methods: {
-    // showForm() {
-    //   this.show = true;
-    //   document.getElementsByTagName("html")[0].className = "overlay";
-    // },
-    // closeForm() {
-    //   this.show = false;
-    //   document.getElementsByTagName("html")[0].className = "";
-    // },
+    showForm() {
+      this.show = true;
+      document.getElementsByTagName("html")[0].className = "overlay";
+    },
+    closeForm() {
+      this.show = false;
+      document.getElementsByTagName("html")[0].className = "";
+    },
 
     next() {
       this.fade = false;
@@ -108,13 +77,6 @@ export default {
       if (this.pointer == 0) this.pointer = this.images.length;
       this.pointer = (this.pointer - 1) % this.images.length;
       setTimeout(() => (this.fade = true), 25);
-    },
-
-    notification(success) {
-      // this.showNotification = success;
-      // setTimeout(() => {
-      //   this.showNotification = false;
-      // }, 3000);
     }
   }
 };

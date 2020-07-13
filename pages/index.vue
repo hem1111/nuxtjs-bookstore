@@ -7,7 +7,6 @@
 </template>
 
 <script>
-import BookCard from "@/components/index/Books";
 import Carousel from "@/components/index/Carousel";
 import Books from "@/components/index/Books";
 import Services from "@/components/index/Services";
@@ -17,8 +16,9 @@ export default {
     Carousel,
     Books,
     Services
-  },
-}
+  }
+};
 </script>
 
 <style type="text/css" lang="scss">
+</style>

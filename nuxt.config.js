@@ -5,39 +5,11 @@ export default {
   ** See https://nuxtjs.org/api/configuration-mode
   */
   mode: 'universal',
-  /* Header of the page */
-  head: {
-    title: "Book-Store",
-    meta: [{
-        charset: "utf-8"
-      },
-      {
-        name: "viewport",
-        content: "width=device-width, initial-scale=1"
-      },
-      {
-        hid: "description",
-        name: "description",
-        content: process.env.npm_package_description || ""
-      }
-    ],
-    link: [{
-        rel: "icon",
-        type: "image/x-icon",
-        href: "/favicon.ico"
-      }, {
-        rel: "stylesheet",
-        type: "text/css",
-        href: "/css/line-awesome.min.css"
-      },
-    ],
-  },
-
   /*
   ** Nuxt target
   ** See https://nuxtjs.org/api/configuration-target
   */
-  target: 'server',
+  target: 'static',
   /*
   ** Headers of the page
   ** See https://nuxtjs.org/api/configuration-head
