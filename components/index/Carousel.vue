@@ -58,12 +58,12 @@ export default {
 
   methods: {
     showForm() {
-      this.show = true;
-      document.getElementsByTagName("html")[0].className = "overlay";
+      // this.show = true;
+      // document.getElementsByTagName("html")[0].className = "overlay";
     },
     closeForm() {
-      this.show = false;
-      document.getElementsByTagName("html")[0].className = "";
+      // this.show = false;
+      // document.getElementsByTagName("html")[0].className = "";
     },
 
     next() {
