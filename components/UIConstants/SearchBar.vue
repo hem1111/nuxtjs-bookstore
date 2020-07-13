@@ -4,7 +4,7 @@
       <nav class="level">
         <div class="level-left">
           <div class="level-item">
-            <img src="@/assets/logo.png" />
+            <img src="https://cdn.discordapp.com/attachments/730070699204411458/732179488250527774/logo.png" />
             <i class="las la-bars is-hidden-desktop is-hidden-tablet" @click="toggle"></i>
           </div>
         </div>
@@ -60,7 +60,7 @@ export default {
 
   methods: {
     search() {
-      this.$router.push(`/products?search=${this.keyword}`);
+      this.$router.push(`/books?search=${this.keyword}`);
     },
 
     toggle() {

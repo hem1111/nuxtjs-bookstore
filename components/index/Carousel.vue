@@ -5,7 +5,7 @@
         <div
           class="carousel-item"
           :class="pointer==index && fade? 'fadeIn': ''"
-          :style="`background-image: url(${require('@/assets/carousel/carousel.png')})`"
+          :style="`background-image: url(${require('@/assets/carousel.png')})`"
           v-show="pointer==index"
         >
           <!-- :style="`background-image: url(${image.src})`" -->
@@ -37,7 +37,7 @@ export default {
       images: [
         {
           src:
-            "https://cdn.discordapp.com/attachments/715800802605793321/722040647569113088/viber_image.jpg",
+            "https://cdn.discordapp.com/attachments/730070699204411458/732186710850666526/carousel.png",
           title: "BOOK STORE : MISSION STATEMENT",
           content: "Click or press the order now button to place your order"
         }

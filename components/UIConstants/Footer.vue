@@ -3,7 +3,7 @@
     <div class="container py-8">
       <div class="columns is-multiline is-variable is-6 is-mobile">
         <div class="column is-one-quarter-fullhd is-full-tablet is-one-quarter-desktop">
-          <img src="@/assets/footer-logo.png" />
+          <img src="https://cdn.discordapp.com/attachments/730070699204411458/732179484102623302/footer-logo.png" />
           <ul class="contact">
             <li class="is-flex">
               <span class="has-text-info">
@@ -15,7 +15,7 @@
               <span class="has-text-info">
                 <i class="las la-envelope"></i>
               </span>
-              <a href="mailto:medmandu@gmail.com">bookstore@gmail.com</a>
+              <a href="#">bookstore@gmail.com</a>
             </li>
             <li class="is-flex">
               <span class="has-text-info">
@@ -56,19 +56,19 @@
               <nuxt-link to="/">Home</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/Books">Books</nuxt-link>
+              <nuxt-link to="/">Books</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/about">About Us</nuxt-link>
+              <nuxt-link to="/">About Us</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/contact">Contact Us</nuxt-link>
+              <nuxt-link to="/">Contact Us</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/privacy-policy">Privacy Policy</nuxt-link>
+              <nuxt-link to="/">Privacy Policy</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/terms-and-conditions">Terms &amp; Conditions</nuxt-link>
+              <nuxt-link to="/">Terms &amp; Conditions</nuxt-link>
             </li>
           </ul>
         </div>
@@ -96,12 +96,12 @@
           <hr />
           <ul class="social">
             <li class="is-inline-block">
-              <a href="https://www.facebook.com/Medmandu" target="_blank">
+              <a href="#" target="_blank">
                 <i class="lab la-facebook-f"></i>
               </a>
             </li>
             <li class="is-inline-block">
-              <a href="https://www.instagram.com/medmandu_np/" target="_blank">
+              <a href="#" target="_blank">
                 <i class="lab la-instagram"></i>
               </a>
             </li>
