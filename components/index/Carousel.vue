@@ -94,7 +94,6 @@ export default {
   position: relative;
   background-color: #000;
   .carousel-item {
-    opacity: 0;
     width: 100vw;
     height: 412px;
     background-position: center;

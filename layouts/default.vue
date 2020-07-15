@@ -5,6 +5,9 @@
     <Navigation />
     <Nuxt />
     <Footer />
+    <transition name="fade">
+      <Enquiry v-if="$store.getters.form" />
+    </transition>
   </div>
 </template>
 
@@ -13,12 +16,15 @@ import TopHeader from "@/components/UIConstants/TopHeader";
 import SearchBar from "@/components/UIConstants/SearchBar";
 import Navigation from "@/components/UIConstants/Navigation";
 import Footer from "@/components/UIConstants/Footer";
+import Enquiry from "@/components/Enquiry";
+
 export default {
   components: {
     TopHeader,
     SearchBar,
     Navigation,
-    Footer
+    Footer,
+    Enquiry
   }
 }
 </script>

@@ -11,14 +11,14 @@ export const state = () => ({
   })
   
   export const mutations = {
-    addMedicine(state, payload) {
+    addBooks(state, payload) {
       state.enquiry.books.push(payload);
     },
   
-    removeMedicine(state, {
+    removeBooks(state, {
       index
     }) {
-      state.enquiry.books = state.enquiry.books.filter((m, i) => i != index);
+      state.enquiry.books = state.enquiry.books.filter((b, i) => i != index);
     },
   
     hide(state) {
@@ -41,12 +41,8 @@ export const state = () => ({
   }
   
   export const getters = {
-    medicines(state) {
+    books(state) {
       return state.enquiry.books;
-    },
-  
-    prescriptions(state) {
-      return state.enquiry.name;
     },
   
     enquiry(state) {

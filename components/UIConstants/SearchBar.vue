@@ -37,26 +37,24 @@
             <p class="control">
               <button class="button is-link is-radiusless" @click="$store.commit('show')">
                 <i class="las la-book-reader"></i>
-                  Add Books 
+                  {{ list }}Add Books 
               </button>
             </p>
           </div>
         </div>
       </nav>
     </div>
-    
   </div>
+
 </template>
 
 <script>
-
 export default {
   data() {
     return {
       keyword: "",
     };
   },
-
 
   methods: {
     search() {

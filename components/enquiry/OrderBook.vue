@@ -21,11 +21,11 @@
               class="dropdown-menu"
               id="dropdown-menu"
               role="menu"
-              v-if="medicines.length>0 && drop && name.length>3"
+              v-if="books.length>0 && drop && name.length>3"
             >
               <div class="dropdown-content">
                 <a
-                  @click="choose(medicine)"
+                  @click="choose(books)"
                   :class="{'is-active': i == index}"
                   class="dropdown-item"
                   v-for="(book,i) in books"
