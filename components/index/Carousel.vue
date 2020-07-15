@@ -58,12 +58,12 @@ export default {
 
   methods: {
     showForm() {
-      this.show = true;
-      document.getElementsByTagName("html")[0].className = "overlay";
+      // this.show = true;
+      // document.getElementsByTagName("html")[0].className = "overlay";
     },
     closeForm() {
-      this.show = false;
-      document.getElementsByTagName("html")[0].className = "";
+      // this.show = false;
+      // document.getElementsByTagName("html")[0].className = "";
     },
 
     next() {
@@ -94,6 +94,10 @@ export default {
   position: relative;
   background-color: #000;
   .carousel-item {
+<<<<<<< HEAD
+=======
+    opacity: 0;
+>>>>>>> e4b6ed9794d4ec89c4afefdd974a44d0899cda70
     width: 100vw;
     height: 412px;
     background-position: center;
