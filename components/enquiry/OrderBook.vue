@@ -2,7 +2,7 @@
   <div>
     <div class="columns">
       <div class="column is-1 pb-0">
-        <p>Medicine</p>
+        <p>Books</p>
       </div>
       <div class="column pb-0 is-two-fifths">
         <!-- <div class="dropdown is-active"> -->
@@ -15,7 +15,7 @@
               placeholder="e.g. The Alchemist"
               @keydown="navigate"
               @keydown.enter.prevent.stop="select"
-              ref="Books"
+              ref="book"
             />
             <div
               class="dropdown-menu"
@@ -25,11 +25,11 @@
             >
               <div class="dropdown-content">
                 <a
-                  @click="choose(books)"
+                  @click="choose(book)"
                   :class="{'is-active': i == index}"
                   class="dropdown-item"
                   v-for="(book,i) in books"
-                  :key="i"
+                  :key="book.id"
                 >{{book.name}}</a>
               </div>
             </div>
@@ -99,6 +99,11 @@ export default {
       drop: false
     };
   },
+  computed: {
+    cart() {
+      return this.$store.getters.books;
+    }
+  },
   watch: {
     name() {
       if (this.name.length > 2 && this.drop) {
@@ -116,6 +121,50 @@ export default {
       }
     }
   },
+
+  methods: {
+    add() {
+      this.$store.commit("addBook", { name: this.name, qty: this.qty });
+      this.name = "";
+      this.qty = "";
+      this.books = [];
+      this.$refs.book.focus();
+    },
+
+    choose(book) {
+      this.drop = false;
+      this.name = book.name;
+    },
+
+    remove(index) {
+      this.$store.commit("removeBook", { index });
+    },
+
+    edit(index) {
+      let { name, qty } = this.cart[index];
+      this.name = name;
+      this.qty = qty;
+      this.$store.commit("removeBook", { index });
+    },
+
+    navigate(e) {
+      this.drop = true;
+      if (e.code == "ArrowDown") {
+        if (this.index < this.medicines.length - 1) this.index++;
+      } else if (e.code == "ArrowUp") {
+        if (this.index > 0) this.index--;
+      } else if (e.code == "Tab") {
+        this.drop = false;
+      }
+    },
+
+    select() {
+      if (this.index > -1) {
+        this.choose(this.books[this.index]);
+        this.index = -1;
+      }
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>

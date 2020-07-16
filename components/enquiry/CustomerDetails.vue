@@ -119,18 +119,15 @@ export default {
       let formData = new FormData();
 
       for (let key in this.$store.getters.enquiry) {
-        if (key != "prescription" && key != "medicine")
+        if (key != "book")
           formData.append(key, this.$store.getters.enquiry[key]);
       }
 
       formData.append(
-        "medicine",
-        JSON.stringify(this.$store.getters.medicines)
+        "book",
+        JSON.stringify(this.$store.getters.books)
       );
 
-      this.$store.getters.prescriptions.forEach(file => {
-        formData.append("prescription", file);
-      });
 
       this.$axios
         .post(`${process.env.url}/api/enquiry`, formData)

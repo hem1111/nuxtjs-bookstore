@@ -11,11 +11,11 @@ export const state = () => ({
   })
   
   export const mutations = {
-    addBooks(state, payload) {
+    addBook(state, payload) {
       state.enquiry.books.push(payload);
     },
   
-    removeBooks(state, {
+    removeBook(state, {
       index
     }) {
       state.enquiry.books = state.enquiry.books.filter((b, i) => i != index);

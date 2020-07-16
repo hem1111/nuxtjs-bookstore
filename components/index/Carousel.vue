@@ -14,7 +14,7 @@
               <div class="container has-text-centered">
                 <h1 class="title is-size-2 is-size-3-mobile" v-html="image.title"></h1>
                 <h2 class="subtitle has-text-white">{{image.content}}</h2>
-                <button class="button is-info is-radiusless is-medium" @click="showForm">
+                <button class="button is-info is-radiusless is-medium" @click="$store.commit('show')">
                   <b>BUY NOW!</b>
                 </button>
               </div>
@@ -94,10 +94,7 @@ export default {
   position: relative;
   background-color: #000;
   .carousel-item {
-<<<<<<< HEAD
-=======
     opacity: 0;
->>>>>>> e4b6ed9794d4ec89c4afefdd974a44d0899cda70
     width: 100vw;
     height: 412px;
     background-position: center;

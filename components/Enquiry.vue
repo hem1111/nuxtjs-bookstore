@@ -13,7 +13,7 @@
               class="is-size-7"
             >Please search for your preferred book and its number to add.</span>
             <span
-              v-if="step==2"
+              v-if="step==1"
               class="is-size-7"
             >Please fill in your information and we'll be sending your order in no time.</span>
           </p>
@@ -33,12 +33,10 @@
               </div>
             </li>
             <li>
-            </li>
-            <li>
               <a href="#">
                 <div
                   class="has-text-centered"
-                  :class="{'active': step==2, 'completed': step>2, 'disabled': step<2}"
+                  :class="{'active': step==1, 'completed': step>1, 'disabled': step<1}"
                 >
                   <i class="las la-user-tie"></i>
                   <br />Contact Information

@@ -56,6 +56,12 @@ export default {
     };
   },
 
+  computed: {
+    list() {
+      return this.$store.getters.books.length;
+    }
+  },
+
   methods: {
     search() {
       this.$router.push(`/books?search=${this.keyword}`);

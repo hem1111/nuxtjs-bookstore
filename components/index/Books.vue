@@ -38,6 +38,7 @@ export default{
     return{
       books: [
         {
+          id: 1,
           img: 'https://cdn.discordapp.com/attachments/730070699204411458/732179475969867796/alchemist.jpg',
           name: 'The Alchemist',
           authorName: 'Paulo Coelho',
@@ -45,6 +46,7 @@ export default{
           desc: 'The Alchemist is the magical story of Santiago, an Andalusian shepherd boy who yearns to travel in search of a worldly treasure as extravagant as any ever found'
         },
         {
+          id: 2,
           img: 'https://cdn.discordapp.com/attachments/730070699204411458/732179475969867796/alchemist.jpg',
           name: 'The Alchemist',
           authorName: 'Paulo Coelho',
@@ -52,6 +54,7 @@ export default{
           desc: 'The Alchemist is the magical story of Santiago, an Andalusian shepherd boy who yearns to travel in search of a worldly treasure as extravagant as any ever found'
         },
         {
+          id: 3,
           img: 'https://cdn.discordapp.com/attachments/730070699204411458/732179475969867796/alchemist.jpg',
           name: 'The Alchemist',
           authorName: 'Paulo Coelho',
@@ -59,6 +62,7 @@ export default{
           desc: 'The Alchemist is the magical story of Santiago, an Andalusian shepherd boy who yearns to travel in search of a worldly treasure as extravagant as any ever found'
         },
         {
+          id: 4,
           img: 'https://cdn.discordapp.com/attachments/730070699204411458/732179475969867796/alchemist.jpg',
           name: 'The Alchemist',
           price: '1800',
@@ -66,6 +70,7 @@ export default{
           desc: 'The Alchemist is the magical story of Santiago, an Andalusian shepherd boy who yearns to travel in search of a worldly treasure as extravagant as any ever found'
         },
         {
+          id: 5,
           img: 'https://cdn.discordapp.com/attachments/730070699204411458/732179475969867796/alchemist.jpg',
           name: 'The Alchemist',
           authorName: 'Paulo Coelho',
@@ -73,6 +78,7 @@ export default{
           desc: 'The Alchemist is the magical story of Santiago, an Andalusian shepherd boy who yearns to travel in search of a worldly treasure as extravagant as any ever found'
         },
         {
+          id: 6,
           img: 'https://cdn.discordapp.com/attachments/730070699204411458/732179475969867796/alchemist.jpg',
           name: 'The Alchemist',
           authorName: 'Paulo Coelho',
@@ -80,6 +86,7 @@ export default{
           desc: 'The Alchemist is the magical story of Santiago, an Andalusian shepherd boy who yearns to travel in search of a worldly treasure as extravagant as any ever found'
         },
         {
+          id: 7,
           img: 'https://cdn.discordapp.com/attachments/730070699204411458/732179475969867796/alchemist.jpg',
           name: 'The Alchemist',
           authorName: 'Paulo Coelho',
@@ -87,6 +94,7 @@ export default{
           desc: 'The Alchemist is the magical story of Santiago, an Andalusian shepherd boy who yearns to travel in search of a worldly treasure as extravagant as any ever found'
         },
         {
+          id: 8,
           img: 'https://cdn.discordapp.com/attachments/730070699204411458/732179475969867796/alchemist.jpg',
           name: 'The Alchemist',
           authorName: 'Paulo Coelho',
